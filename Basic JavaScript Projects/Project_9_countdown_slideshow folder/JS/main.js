@@ -30,7 +30,7 @@ function showSlides(n) {
 var slideIndex = 0;
 showSlides();
 
-function showSlides() {
+function showSlides() {           //This function is automatic slide show effect
   var i;
   var slides = document.getElementsByClassName("mySlides");
   for (i = 0; i < slides.length; i++) {
@@ -40,4 +40,18 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+function countdown() {
+  var seconds=document.getElementById("seconds").value;
+  
+  function tick() {
+      seconds=seconds - 1;
+      timer.innerHTML=seconds;
+      setTimeout(tick, 1000);
+      if(seconds == -1) {
+          alert("Time's up!");
+  }
+      }
+  tick();
 }
