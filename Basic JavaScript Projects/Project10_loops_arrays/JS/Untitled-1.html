@@ -1,0 +1,56 @@
+<body>
+
+    <h3>JavaScript Statements</h3>
+    <h4>The return Statement</h4>
+
+    <p>Call a function that returns the value of PI:</p>
+
+    <p id="demo_return"></p>
+
+    function myFunction() {
+        return Math.PI;
+      }
+      
+      document.getElementById("demo_return").innerHTML = myFunction();
+    
+
+
+
+</body>
+
+<body>
+
+    <h5>JavaScript Loops</h5>
+
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="demo_break"></p>
+
+</body>
+
+let text = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { break; }
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo_break").innerHTML = text;
+
+
+
+function string_length() {
+    var text = "Hello World!";
+    var length = text.length;
+    document.getElementById("finding_length").innerHTML=length;
+}
+<body>
+    <h1>JavaScript Strings</h1>
+    <h2>The length Property</h2>
+
+    <p>The length property returns the length of a string.</p>
+
+    <p>Find the length of "Hello World!":</p>
+
+    <p id="finding_length"></p> 
+
+</body>
